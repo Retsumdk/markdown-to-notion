@@ -1,0 +1,32 @@
+{
+  "name": "markdown-to-notion",
+  "version": "1.0.0",
+  "description": "Convert Markdown documents to Notion pages preserving formatting and structure",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "markdown-to-notion": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "markdown",
+    "notion",
+    "converter",
+    "export",
+    "import"
+  ],
+  "author": "The BookMaster",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "notion-to-md": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  }
+}
