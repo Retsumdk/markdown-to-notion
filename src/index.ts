@@ -226,4 +226,6 @@ async function main() {
   console.log(`Page URL: ${result.url}`);
 }
 
-main().catch(console.error);
+if (import.meta.main) {
+  main().catch(console.error);
+}
