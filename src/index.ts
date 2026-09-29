@@ -159,7 +159,7 @@ export class MarkdownToNotion {
           ],
         },
       },
-      children: blocks,
+      children: blocks as any,
     });
 
     return {
