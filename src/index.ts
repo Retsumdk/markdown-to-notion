@@ -226,6 +226,6 @@ async function main() {
   console.log(`Page URL: ${result.url}`);
 }
 
-if (import.meta.main) {
+if (typeof require !== "undefined" && require.main === module) {
   main().catch(console.error);
 }

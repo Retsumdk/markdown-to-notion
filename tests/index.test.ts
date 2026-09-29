@@ -1,4 +1,4 @@
-import { describe, test, expect } from "bun:test";
+import { describe, test, expect } from "@jest/globals";
 import { MarkdownToNotion } from "../src/index";
 
 describe("parseMarkdownToBlocks", () => {
